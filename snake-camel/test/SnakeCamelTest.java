@@ -49,7 +49,7 @@ public class SnakeCamelTest {
 		String act=scu.snakeToCamelcase("abcDeF");
 		assertThat(act, is(ex));
 	}
-	
+
 	@Test
 	public void Abc() {
 		SnakeCamelUtil scu=new SnakeCamelUtil();

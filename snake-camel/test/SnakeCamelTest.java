@@ -6,7 +6,7 @@ import org.junit.Test;
 import snakecamel.SnakeCamelUtil;
 
 public class SnakeCamelTest {
-/*
+
 	@Test
 	public void abc() {
 		SnakeCamelUtil scu=new SnakeCamelUtil();
@@ -49,7 +49,7 @@ public class SnakeCamelTest {
 		String act=scu.snakeToCamelcase("abcDeF");
 		assertThat(act, is(ex));
 	}
-	*/
+	
 	@Test
 	public void Abc() {
 		SnakeCamelUtil scu=new SnakeCamelUtil();

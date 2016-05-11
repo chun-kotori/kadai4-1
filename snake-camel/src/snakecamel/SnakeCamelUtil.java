@@ -37,19 +37,18 @@ public class SnakeCamelUtil {
 	 
 	public static String camelToSnakecase(String camelcase) {
 		StringBuilder sb = new StringBuilder();
-		int j = 0;
 		for (int i = 0; i < camelcase.length(); i++) {
 			char c = camelcase.charAt(i);
-			if (Character.isUpperCase(c)) {
-				sb.append(camelcase.substring(j, i));
+			if (Character.isUpperCase(c)) {//大文字だったら
 				if (sb.length() > 0) {
 					sb.append("_");
 				}
 				sb.append(Character.toLowerCase(c));
-				j = i;
+			}else{
+				sb.append(c);
 			}
 		}
-		sb.append(camelcase.substring(j));
+		System.out.println(sb);
 		return new String(sb);
 	}
 	
